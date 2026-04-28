@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CK Mediator — VAD for Chinese Technology Vendors entering Europe</title>
+  <meta name="description" content="CK Mediator is a Value-Added Distributor helping Asian manufacturers enter and scale in the EU — compliance, logistics, sales, marketing and after-sales." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="en">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="CK Mediator">
+        <img class="brand-logo" src="CK-Mediator-Logo-2023.svg" alt="CK Mediator" />
+      </a>
+
+      <nav class="nav-links">
+        <a href="#why" data-i18n="nav.why">Why us</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#intake" data-i18n="nav.intake">Vendor form</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang-btn="en" class="lang-btn is-on" aria-pressed="true">EN</button>
+          <button type="button" data-lang-btn="zh" class="lang-btn" aria-pressed="false">中文</button>
+        </div>
+        <a href="#intake" class="btn btn-primary btn-sm" data-i18n="nav.cta">Request VAD Partnership</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <span class="dot"></span>
+          <span data-i18n="hero.eyebrow">VAD · EU Market Entry · Since 2003</span>
+        </span>
+        <h1>
+          <span data-i18n="hero.h1a">Your Gateway to the</span><br>
+          <span class="gradient-text" data-i18n="hero.h1b">European Market</span>
+        </h1>
+        <p class="lede" data-i18n="hero.lede">
+          CK Mediator helps Asian manufacturers enter and scale in the EU with full
+          distribution, compliance, logistics, and sales enablement — under one roof.
+        </p>
+
+        <ul class="hero-bullets">
+          <li><svg viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-i18n="hero.b1">20+ years in EU consumer electronics distribution</span></li>
+          <li><svg viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-i18n="hero.b2">CE, WEEE, battery & packaging compliance handled end-to-end</span></li>
+          <li><svg viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> <span data-i18n="hero.b3">Poland logistics hub · EU-wide fulfillment</span></li>
+        </ul>
+
+        <div class="hero-trust">
+          <div class="trust-stat"><strong>20+</strong><span data-i18n="hero.t1">years on the EU market</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat"><strong>27</strong><span data-i18n="hero.t2">EU countries served</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-stat"><strong>120+</strong><span data-i18n="hero.t3">retail & marketplace partners</span></div>
+        </div>
+      </div>
+
+      <!-- Lead capture -->
+      <aside class="lead-card" aria-label="Quick partnership request">
+        <div class="lead-card-head">
+          <h3 data-i18n="lead.title">Request VAD partnership</h3>
+          <p data-i18n="lead.sub">Takes 30 seconds. We'll reply within one business day.</p>
+        </div>
+        <form class="lead-form" onsubmit="event.preventDefault(); document.querySelector('#intake').scrollIntoView({behavior:'smooth'});">
+          <label class="field">
+            <span data-i18n="lead.company">Company name</span>
+            <input type="text" data-i18n-attr="placeholder|lead.company.ph" placeholder="e.g. Shenzhen Aurora Tech Co." required />
+          </label>
+          <label class="field">
+            <span data-i18n="lead.cat">Product category</span>
+            <select required>
+              <option value="" disabled selected data-i18n="lead.cat.ph">Choose a category…</option>
+              <option data-i18n="cat.audio">Audio & Headphones</option>
+              <option data-i18n="cat.smart">Smart Home / IoT</option>
+              <option data-i18n="cat.mobile">Mobile Accessories</option>
+              <option data-i18n="cat.wear">Wearables</option>
+              <option data-i18n="cat.peri">Computer Peripherals</option>
+              <option data-i18n="cat.power">Power & Charging</option>
+              <option data-i18n="cat.appl">Small Appliances</option>
+              <option data-i18n="cat.other">Other</option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="lead.email">Business email</span>
+            <input type="email" data-i18n-attr="placeholder|lead.email.ph" placeholder="you@company.com" required />
+          </label>
+          <button class="btn btn-primary btn-block" type="submit">
+            <span data-i18n="lead.cta">Request VAD Partnership</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="lead-note" data-i18n="lead.note">By submitting you agree to our privacy policy. No spam — just one human reply.</p>
+        </form>
+      </aside>
+    </div>
+
+    <div class="container hero-logos">
+      <span class="logos-label" data-i18n="logos.label">Trusted across European retail & online</span>
+      <div class="logos">
+        <div class="logo-chip">MediaMarkt</div>
+        <div class="logo-chip">Euronics</div>
+        <div class="logo-chip">RTV Euro AGD</div>
+        <div class="logo-chip">Allegro</div>
+        <div class="logo-chip">Amazon EU</div>
+        <div class="logo-chip">Komputronik</div>
+        <div class="logo-chip">x-kom</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY ===================== -->
+  <section id="why" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="kicker" data-i18n="why.kicker">Why Europe · Why CK Mediator</span>
+        <h2 data-i18n="why.title">One partner for the entire European go-to-market</h2>
+        <p data-i18n="why.sub">From customs clearance to retail shelves and marketplace listings — we replace 6+ vendors with a single, accountable team.</p>
+      </header>
+
+      <div class="why-grid">
+        <article class="card">
+          <div class="card-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12c2-6 16-6 18 0M3 12c2 6 16 6 18 0" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 data-i18n="why.c1.t">20+ years in EU distribution</h3>
+          <p data-i18n="why.c1.p">Established partner with strong retail & B2B channels across 27 European countries.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-violet">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="why.c2.t">Full compliance & certification</h3>
+          <p data-i18n="why.c2.p">CE, WEEE, RoHS, batteries, packaging, technical documentation — all handled.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-amber">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="why.c3.t">Sales & marketing execution</h3>
+          <p data-i18n="why.c3.p">Retail onboarding, e-commerce, paid campaigns, PR and influencer activation.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-green">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h12l4 5v5h-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7v10h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="why.c4.t">Local service & warranty</h3>
+          <p data-i18n="why.c4.p">RMA, repairs, spare parts and SLAs handled by our in-house service center.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-pink">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="why.c5.t">Logistics & warehousing</h3>
+          <p data-i18n="why.c5.p">Poland-based hub with EU-wide shipping, B2B and B2C fulfillment, returns.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 data-i18n="why.c6.t">Channel development</h3>
+          <p data-i18n="why.c6.p">Distributors, resellers and marketplaces — opened, contracted, managed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section id="process" class="section section-dark">
+    <div class="container">
+      <header class="section-head light">
+        <span class="kicker" data-i18n="proc.kicker">How we work</span>
+        <h2 data-i18n="proc.title">From product to European shelves in 5 structured steps</h2>
+        <p data-i18n="proc.sub">A predictable, milestone-driven program — so you always know what's next.</p>
+      </header>
+
+      <ol class="timeline">
+        <li>
+          <div class="step-num">01</div>
+          <h4 data-i18n="proc.s1.t">Product & Market Fit</h4>
+          <p data-i18n="proc.s1.p">Category benchmarking, pricing analysis, target buyer mapping.</p>
+        </li>
+        <li>
+          <div class="step-num">02</div>
+          <h4 data-i18n="proc.s2.t">Compliance & Certification</h4>
+          <p data-i18n="proc.s2.p">CE, WEEE, batteries, packaging, manuals & DoC for the EU.</p>
+        </li>
+        <li>
+          <div class="step-num">03</div>
+          <h4 data-i18n="proc.s3.t">Pricing & Channel Strategy</h4>
+          <p data-i18n="proc.s3.p">MSRP architecture, margin model, channel conflict prevention.</p>
+        </li>
+        <li>
+          <div class="step-num">04</div>
+          <h4 data-i18n="proc.s4.t">Distribution & Sales</h4>
+          <p data-i18n="proc.s4.p">Retail onboarding, marketplaces, B2B, e-commerce launch.</p>
+        </li>
+        <li>
+          <div class="step-num">05</div>
+          <h4 data-i18n="proc.s5.t">After-Sales & Growth</h4>
+          <p data-i18n="proc.s5.p">RMA, spare parts, replenishment, KPI reviews, expansion.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES (MODULAR) ===================== -->
+  <section id="services" class="section">
+    <div class="container">
+      <header class="section-head">
+        <span class="kicker" data-i18n="mod.kicker">Modular VAD model</span>
+        <h2 data-i18n="mod.title">Pick the modules you need — we'll quote the rest</h2>
+        <p data-i18n="mod.sub">Mix and match like building blocks. Add or remove modules as you scale.</p>
+      </header>
+
+      <div class="modules-grid" id="modules">
+        <article class="module" data-module-key="m1">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m1.t">Regulatory & Compliance</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m1.b1">CE / RoHS / EMC / RED testing</li>
+            <li data-i18n="mod.m1.b2">WEEE, battery & packaging registration</li>
+            <li data-i18n="mod.m1.b3">Technical files, DoC, manuals</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m2">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 10l9-6 9 6v10H3V10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m2.t">Warehousing & Fulfillment</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m2.b1">Poland hub · EU-wide shipping</li>
+            <li data-i18n="mod.m2.b2">B2B & B2C order fulfillment</li>
+            <li data-i18n="mod.m2.b3">Inventory & SKU management</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m3">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 8-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m3.t">Sales & Channel Development</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m3.b1">Retail onboarding & negotiations</li>
+            <li data-i18n="mod.m3.b2">Distributor & reseller network</li>
+            <li data-i18n="mod.m3.b3">Marketplace account management</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m4">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 11l14-6v14L3 13v-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M7 13v4a2 2 0 002 2h1" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m4.t">Marketing & PR</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m4.b1">Influencer & PR campaigns</li>
+            <li data-i18n="mod.m4.b2">Paid ads (Google, Meta, TikTok)</li>
+            <li data-i18n="mod.m4.b3">Social, content, reviews</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m5">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M14 6l4 4-9 9H5v-4l9-9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m5.t">Warranty & Service Center</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m5.b1">RMA, repairs, spare parts</li>
+            <li data-i18n="mod.m5.b2">SLA-backed service operations</li>
+            <li data-i18n="mod.m5.b3">Warranty policy creation</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m6">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m6.t">Financial & Invoicing Support</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m6.b1">EU invoicing & credit terms</li>
+            <li data-i18n="mod.m6.b2">VAT / OSS guidance</li>
+            <li data-i18n="mod.m6.b3">Cash-flow & FX optimization</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m7">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 10l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m7.t">EU Authorized Representative</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m7.b1">Legal EU representation</li>
+            <li data-i18n="mod.m7.b2">Liaison with market authorities</li>
+            <li data-i18n="mod.m7.b3">Document custody & response</li>
+          </ul>
+        </article>
+
+        <article class="module" data-module-key="m8">
+          <div class="module-head">
+            <div class="module-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V8m6 12V4m6 16v-9m6 9V12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <button class="module-toggle" type="button" aria-pressed="false" data-i18n="mod.add">+ Add to scope</button>
+          </div>
+          <h3 data-i18n="mod.m8.t">Market Intelligence & Reporting</h3>
+          <ul class="bullets">
+            <li data-i18n="mod.m8.b1">Sell-through dashboards</li>
+            <li data-i18n="mod.m8.b2">Competitive benchmarking</li>
+            <li data-i18n="mod.m8.b3">Quarterly business reviews</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="scope-bar" id="scopeBar" hidden>
+        <div class="scope-bar-inner">
+          <div>
+            <strong id="scopeCount">0 modules</strong>
+            <span id="scopeList" class="scope-list"></span>
+          </div>
+          <a href="#intake" class="btn btn-primary btn-sm" data-i18n="mod.continue">Continue to vendor form →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTAKE FORM ===================== -->
+  <section id="intake" class="section section-soft">
+    <div class="container intake-grid">
+
+      <aside class="intake-side">
+        <div class="intake-side-sticky">
+          <span class="kicker" data-i18n="intake.kicker">Vendor qualification</span>
+          <h2 data-i18n="intake.title">Tell us about your company</h2>
+          <p data-i18n="intake.sub">This intake helps us scope the right VAD program. The more details you share, the more accurate our proposal.</p>
+
+          <ol class="side-nav" id="sideNav">
+            <li class="active"><a href="#step-1"><span>01</span> <span data-i18n="step.1">Company information</span></a></li>
+            <li><a href="#step-2"><span>02</span> <span data-i18n="step.2">Product information</span></a></li>
+            <li><a href="#step-3"><span>03</span> <span data-i18n="step.3">Market readiness</span></a></li>
+            <li><a href="#step-4"><span>04</span> <span data-i18n="step.4">Logistics & operations</span></a></li>
+            <li><a href="#step-5"><span>05</span> <span data-i18n="step.5">Sales & distribution</span></a></li>
+            <li><a href="#step-6"><span>06</span> <span data-i18n="step.6">Marketing & PR</span></a></li>
+            <li><a href="#step-7"><span>07</span> <span data-i18n="step.7">Warranty & service</span></a></li>
+            <li><a href="#step-8"><span>08</span> <span data-i18n="step.8">Financial & legal</span></a></li>
+            <li><a href="#step-9"><span>09</span> <span data-i18n="step.9">Partnership expectations</span></a></li>
+          </ol>
+
+          <div class="progress">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span id="progressLabel" data-i18n="intake.progress">0% complete</span>
+          </div>
+        </div>
+      </aside>
+
+      <form class="intake-form" id="intakeForm" onsubmit="event.preventDefault(); document.getElementById('thanks').scrollIntoView({behavior:'smooth'});">
+
+        <!-- 1. Company Information -->
+        <fieldset id="step-1" class="step">
+          <legend><span class="step-badge">01</span> <span data-i18n="step.1">Company Information</span></legend>
+          <div class="grid-2">
+            <label class="field"><span data-i18n="f.company">Company name *</span><input required type="text" data-i18n-attr="placeholder|f.company.ph" placeholder="Legal entity name"></label>
+            <label class="field"><span data-i18n="f.country">Country of origin *</span>
+              <select required>
+                <option value="" disabled selected data-i18n="ph.country">Select country…</option>
+                <option data-i18n="country.cn">China</option><option data-i18n="country.hk">Hong Kong SAR</option><option data-i18n="country.tw">Taiwan</option><option data-i18n="country.vn">Vietnam</option><option data-i18n="country.kr">South Korea</option><option data-i18n="country.jp">Japan</option><option data-i18n="country.other">Other</option>
+              </select>
+            </label>
+            <label class="field"><span data-i18n="f.web">Website</span><input type="url" placeholder="https://"></label>
+            <label class="field"><span data-i18n="f.contact">Contact person *</span><input required type="text" data-i18n-attr="placeholder|f.contact.ph" placeholder="Full name"></label>
+            <label class="field"><span data-i18n="f.email">Business email *</span><input required type="email" placeholder="you@company.com"></label>
+            <label class="field"><span data-i18n="f.im">WeChat / WhatsApp</span><input type="text" data-i18n-attr="placeholder|f.im.ph" placeholder="ID or number"></label>
+            <label class="field"><span data-i18n="f.years">Years in business</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option>&lt; 2</option><option>2–5</option><option>6–10</option><option>11–20</option><option>20+</option>
+              </select>
+            </label>
+            <label class="field"><span data-i18n="f.rev">Annual revenue (USD)</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.range">Select range…</option>
+                <option>&lt; 1M</option><option>1–5M</option><option>5–20M</option><option>20–100M</option><option>100M+</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- 2. Product Information -->
+        <fieldset id="step-2" class="step">
+          <legend><span class="step-badge">02</span> <span data-i18n="step.2">Product Information</span></legend>
+
+          <span class="field-label" data-i18n="f.categories">Product categories <small>(select all that apply)</small></span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.audio">Audio & Headphones</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.smart">Smart Home / IoT</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.wear">Wearables</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.mobile">Mobile Accessories</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.power">Power & Charging</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.peri">Computer Peripherals</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.appl">Small Appliances</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="cat.light">Lighting</span></label>
+          </div>
+
+          <span class="field-label" data-i18n="f.certs">Existing certifications</span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox"><span>CE</span></label>
+            <label class="chip"><input type="checkbox"><span>RoHS</span></label>
+            <label class="chip"><input type="checkbox"><span>FCC</span></label>
+            <label class="chip"><input type="checkbox"><span>EMC</span></label>
+            <label class="chip"><input type="checkbox"><span>RED</span></label>
+            <label class="chip"><input type="checkbox"><span>UKCA</span></label>
+            <label class="chip"><input type="checkbox"><span>ETSI</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="opt.none">None</span></label>
+          </div>
+
+          <div class="grid-2">
+            <fieldset class="radio-group">
+              <legend data-i18n="q.batt">Products contain batteries / chargers / radio modules?</legend>
+              <label class="radio"><input type="radio" name="batt"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="batt"><span data-i18n="opt.some">Some</span></label>
+              <label class="radio"><input type="radio" name="batt"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group">
+              <legend data-i18n="q.docs">EU-compliant documentation available?</legend>
+              <label class="radio"><input type="radio" name="docs"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="docs"><span data-i18n="opt.partial">Partial</span></label>
+              <label class="radio"><input type="radio" name="docs"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group">
+              <legend data-i18n="q.cert">Need support with certification?</legend>
+              <label class="radio"><input type="radio" name="cert"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="cert"><span data-i18n="opt.no">No</span></label>
+              <label class="radio"><input type="radio" name="cert"><span data-i18n="opt.notsure">Not sure</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 3. Market Readiness -->
+        <fieldset id="step-3" class="step">
+          <legend><span class="step-badge">03</span> <span data-i18n="step.3">Market Readiness</span></legend>
+
+          <fieldset class="radio-group wide">
+            <legend data-i18n="q.sold">Have you sold in Europe before?</legend>
+            <label class="radio"><input type="radio" name="sold"><span data-i18n="opt.yes">Yes</span></label>
+            <label class="radio"><input type="radio" name="sold"><span data-i18n="opt.no">No</span></label>
+          </fieldset>
+
+          <label class="field"><span data-i18n="f.where">If yes — where? (Amazon, retailers, distributors)</span><input type="text" data-i18n-attr="placeholder|f.where.ph" placeholder="e.g. Amazon DE, MediaMarkt, …"></label>
+
+          <div class="grid-2">
+            <fieldset class="radio-group"><legend data-i18n="q.pricing">EU pricing strategy in place?</legend>
+              <label class="radio"><input type="radio" name="pr"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="pr"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.pkg">Localized packaging?</legend>
+              <label class="radio"><input type="radio" name="pkg"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="pkg"><span data-i18n="opt.partial">Partial</span></label>
+              <label class="radio"><input type="radio" name="pkg"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.manuals">Localized manuals?</legend>
+              <label class="radio"><input type="radio" name="man"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="man"><span data-i18n="opt.partial">Partial</span></label>
+              <label class="radio"><input type="radio" name="man"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.assets">EU marketing assets ready?</legend>
+              <label class="radio"><input type="radio" name="ass"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="ass"><span data-i18n="opt.some">Some</span></label>
+              <label class="radio"><input type="radio" name="ass"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 4. Logistics & Operations -->
+        <fieldset id="step-4" class="step">
+          <legend><span class="step-badge">04</span> <span data-i18n="step.4">Logistics & Operations</span></legend>
+          <div class="grid-2">
+            <fieldset class="radio-group"><legend data-i18n="q.wh">Need warehousing in Poland?</legend>
+              <label class="radio"><input type="radio" name="wh"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="wh"><span data-i18n="opt.maybe">Maybe</span></label>
+              <label class="radio"><input type="radio" name="wh"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <label class="field"><span data-i18n="f.vol">Expected monthly shipment volume</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option data-i18n="vol.lt1">&lt; 1 pallet</option><option data-i18n="vol.1to5">1–5 pallets</option><option data-i18n="vol.1c">1 container / month</option><option data-i18n="vol.2to5c">2–5 containers / month</option><option data-i18n="vol.5plus">5+ containers / month</option>
+              </select>
+            </label>
+            <label class="field"><span data-i18n="f.sku">Active SKU count</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option>&lt; 10</option><option>10–50</option><option>50–200</option><option>200+</option>
+              </select>
+            </label>
+            <fieldset class="radio-group"><legend data-i18n="q.ff">Fulfillment type needed</legend>
+              <label class="radio"><input type="radio" name="ff"><span>B2B</span></label>
+              <label class="radio"><input type="radio" name="ff"><span>B2C</span></label>
+              <label class="radio"><input type="radio" name="ff"><span data-i18n="opt.both">Both</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.returns">Returns handling?</legend>
+              <label class="radio"><input type="radio" name="rh"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="rh"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.spare">Spare parts storage?</legend>
+              <label class="radio"><input type="radio" name="sp"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="sp"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 5. Sales & Distribution -->
+        <fieldset id="step-5" class="step">
+          <legend><span class="step-badge">05</span> <span data-i18n="step.5">Sales & Distribution</span></legend>
+
+          <span class="field-label" data-i18n="f.channels">Preferred sales channels</span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox"><span data-i18n="ch.retail">Retail chains</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="ch.dist">Distributors</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="ch.mp">Marketplaces (Amazon, Allegro)</span></label>
+            <label class="chip"><input type="checkbox"><span>B2B</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="ch.own">Own e-commerce</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="ch.pro">Pro / Channel</span></label>
+          </div>
+
+          <div class="grid-2">
+            <fieldset class="radio-group"><legend data-i18n="q.neg">Need CK Mediator to negotiate with retailers?</legend>
+              <label class="radio"><input type="radio" name="neg"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="neg"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.mp">Manage marketplace accounts?</legend>
+              <label class="radio"><input type="radio" name="mp"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="mp"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 6. Marketing & PR -->
+        <fieldset id="step-6" class="step">
+          <legend><span class="step-badge">06</span> <span data-i18n="step.6">Marketing & PR</span></legend>
+
+          <span class="field-label" data-i18n="f.mkt">Marketing services needed</span>
+          <div class="chips">
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.inf">Influencer campaigns</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.pr">PR in EU media</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.rev">Product reviews</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.smm">Social media management</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.ads">Paid ads (Google, Meta)</span></label>
+            <label class="chip"><input type="checkbox"><span data-i18n="mk.fairs">Trade fairs / events</span></label>
+          </div>
+
+          <label class="field">
+            <span data-i18n="f.budget">EU marketing budget (per quarter, EUR)</span>
+            <select>
+              <option value="" disabled selected data-i18n="ph.range">Select range…</option>
+              <option>&lt; 5k</option><option>5–20k</option><option>20–50k</option><option>50–100k</option><option>100k+</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- 7. Warranty & Service -->
+        <fieldset id="step-7" class="step">
+          <legend><span class="step-badge">07</span> <span data-i18n="step.7">Warranty & Service</span></legend>
+          <div class="grid-2">
+            <fieldset class="radio-group"><legend data-i18n="q.svc">Need local service center?</legend>
+              <label class="radio"><input type="radio" name="svc"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="svc"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <label class="field"><span data-i18n="f.rma">Expected RMA rate (%)</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option>&lt; 1%</option><option>1–3%</option><option>3–5%</option><option>5–10%</option><option>10%+</option>
+              </select>
+            </label>
+            <fieldset class="radio-group"><legend data-i18n="q.src">Spare parts sourcing?</legend>
+              <label class="radio"><input type="radio" name="src"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="src"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.wp">Warranty policy creation?</legend>
+              <label class="radio"><input type="radio" name="wp"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="wp"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 8. Financial & Legal -->
+        <fieldset id="step-8" class="step">
+          <legend><span class="step-badge">08</span> <span data-i18n="step.8">Financial & Legal</span></legend>
+          <div class="grid-2">
+            <fieldset class="radio-group"><legend data-i18n="q.ar">EU Authorized Representative needed?</legend>
+              <label class="radio"><input type="radio" name="ar"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="ar"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.inv">Invoicing support?</legend>
+              <label class="radio"><input type="radio" name="inv"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="inv"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.vat">VAT / OSS guidance?</legend>
+              <label class="radio"><input type="radio" name="vat"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="vat"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+            <fieldset class="radio-group"><legend data-i18n="q.weee">WEEE / battery / packaging registration?</legend>
+              <label class="radio"><input type="radio" name="weee"><span data-i18n="opt.yes">Yes</span></label>
+              <label class="radio"><input type="radio" name="weee"><span data-i18n="opt.partial">Partial</span></label>
+              <label class="radio"><input type="radio" name="weee"><span data-i18n="opt.no">No</span></label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+        <!-- 9. Partnership Expectations -->
+        <fieldset id="step-9" class="step">
+          <legend><span class="step-badge">09</span> <span data-i18n="step.9">Partnership Expectations</span></legend>
+          <div class="grid-2">
+            <label class="field"><span data-i18n="f.timeline">Expected timeline to enter EU</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option data-i18n="tl.lt3">&lt; 3 months</option><option data-i18n="tl.3to6">3–6 months</option><option data-i18n="tl.6to12">6–12 months</option><option data-i18n="tl.12plus">12+ months</option>
+              </select>
+            </label>
+            <label class="field"><span data-i18n="f.target">Expected monthly sales target (EUR)</span>
+              <select>
+                <option value="" disabled selected data-i18n="ph.select">Select…</option>
+                <option>&lt; 50k</option><option>50–200k</option><option>200k–1M</option><option>1M+</option>
+              </select>
+            </label>
+            <fieldset class="radio-group wide">
+              <legend data-i18n="q.model">Preferred cooperation model</legend>
+              <label class="radio"><input type="radio" name="model"><span data-i18n="opt.vad">VAD (full-stack)</span></label>
+              <label class="radio"><input type="radio" name="model"><span data-i18n="opt.dist">Distributor</span></label>
+              <label class="radio"><input type="radio" name="model"><span data-i18n="opt.hybrid">Hybrid</span></label>
+            </fieldset>
+          </div>
+          <label class="field"><span data-i18n="f.notes">Additional notes</span>
+            <textarea rows="4" data-i18n-attr="placeholder|f.notes.ph" placeholder="Anything we should know — flagship products, target retailers, deadlines…"></textarea>
+          </label>
+
+          <div class="form-cta">
+            <p data-i18n="form.privacy">By submitting you agree to our privacy policy. We'll reply within one business day.</p>
+            <button class="btn btn-primary btn-lg" type="submit">
+              <span data-i18n="form.submit">Submit Vendor Application</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-4-4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section id="thanks" class="cta-band">
+    <div class="container cta-band-inner">
+      <h2 data-i18n="cta.title">Ready to enter the European market?</h2>
+      <p data-i18n="cta.sub">Let CK Mediator become your strategic VAD partner — from compliance to retail shelf.</p>
+      <div class="cta-actions">
+        <a href="#intake" class="btn btn-primary btn-lg" data-i18n="cta.btn">Request VAD Partnership</a>
+        <a href="mailto:partners@ckmediator.eu" class="btn btn-ghost btn-lg">partners@ckmediator.eu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img class="brand-logo brand-logo-footer" src="CK-Mediator-Logo-2023.svg" alt="CK Mediator" />
+        </div>
+        <p data-i18n="footer.tag">Value-Added Distribution for Asian technology brands entering the European market.</p>
+      </div>
+
+      <div>
+        <h5 data-i18n="footer.company">Company</h5>
+        <ul><li><a href="#why" data-i18n="footer.about">About</a></li><li><a href="#services" data-i18n="footer.services">Services</a></li><li><a href="#process" data-i18n="footer.process">Process</a></li></ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.vendors">Vendors</h5>
+        <ul><li><a href="#intake" data-i18n="footer.apply">Apply</a></li><li><a href="#services" data-i18n="footer.modules">Modules</a></li><li><a href="#" data-i18n="footer.cases">Case studies</a></li></ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.contact">Contact</h5>
+        <ul>
+          <li>partners@ckmediator.eu</li>
+          <li>+48 22 000 00 00</li>
+          <li data-i18n="footer.location">Warsaw · Poland</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <span data-i18n="footer.copy">© 2026 CK Mediator Sp. z o.o. — All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="footer.privacy">Privacy</a><a href="#" data-i18n="footer.terms">Terms</a><a href="#" data-i18n="footer.imprint">Imprint</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
