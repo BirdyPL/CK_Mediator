@@ -46,7 +46,7 @@
 |---|---|---|
 | q1.counter | Question 1 of 5 | Pytanie 1 z 5 |
 | q1.title | What does your brand sell? | Co sprzedaje Twoja marka? |
-| q1.help | Select all that apply — many brands span multiple categories. | Zaznacz wszystko co pasuje — wiele marek operuje w kilku kategoriach. |
+| q1.help | Select all that apply — many brands span multiple categories. | Zaznacz wszystko co Ci pasuje — wiele marek operuje w kilku kategoriach. |
 | q1.opt.phones | Smartphones & Mobile | Smartfony i telefonia |
 | q1.opt.computing | Laptops & Computing | Laptopy i komputery |
 | q1.opt.computing.sub | including refurbished | w tym refurbished |
@@ -81,7 +81,7 @@
 | q3.counter | Question 3 of 5 | Pytanie 3 z 5 |
 | q3.title | What's your goal for the next 12 months? | Jaki jest Twój cel na najbliższe 12 miesięcy? |
 | q3.opt.test | Test the market | Test rynku |
-| q3.opt.test.sub | validate demand with low commitment | walidacja popytu przy niskim zaangażowaniu |
+| q3.opt.test.sub | validate demand with low commitment | weryfikacja popytu przy niskim zaangażowaniu |
 | q3.opt.scale | Scale | Skalowanie |
 | q3.opt.scale.sub | grow our existing base in CEE | rozwój istniejącej obecności w CEE |
 | q3.opt.leader | Become a category leader | Lider kategorii |
@@ -94,11 +94,11 @@
 | Key | EN | PL |
 |---|---|---|
 | q4.counter | Question 4 of 5 | Pytanie 4 z 5 |
-| q4.title | Which markets are you targeting? | Na jakie rynki celujesz? |
+| q4.title | Which markets are you targeting? | W jakie rynki celujesz? |
 | q4.opt.pl | Poland only (PL) | Tylko Polska (PL) |
-| q4.opt.baltics | Poland + Baltics (LT, LV, EE) | Polska + Bałtyckie kraje (LT, LV, EE) |
+| q4.opt.baltics | Poland + Baltics (LT, LV, EE) | Polska + kraje Bałtyckie (LT, LV, EE) |
 | q4.opt.cee | All Central & Eastern Europe (CEE) | Cała Europa Środkowo-Wschodnia (CEE) |
-| q4.opt.eu | Beyond CEE — full EU ambition | Poza CEE — ambicja na całą UE |
+| q4.opt.eu | Beyond CEE — full EU ambition | Poza CEE — ambicja dotarcia do całej UE |
 
 ---
 
@@ -107,8 +107,8 @@
 | Key | EN | PL |
 |---|---|---|
 | q5.counter | Question 5 of 5 — optional | Pytanie 5 z 5 — opcjonalne |
-| q5.title | What's your monthly marketing support for European operations? | Jakie jest Twoje miesięczne wsparcie marketingowe dla operacji europejskich? |
-| q5.help | The marketing investment you'll bring — CK Mediator co-funds operations and channel access. | Twoja miesięczna inwestycja marketingowa — CK Mediator dokłada operacje i dostęp do kanałów. |
+| q5.title | What's your monthly marketing support for European operations? | Jakie jest Twoje miesięczne wsparcie marketingowe dla operacji europejskiej? |
+| q5.help | The marketing investment you'll bring — CK Mediator co-funds operations and channel access. | Twoja miesięczna inwestycja marketingowa — CK Mediator dokłada od siebie operacje i dostęp do kanałów. |
 | q5.opt.modest | Modest | Skromne |
 | q5.opt.modest.sub | initial marketing investment | wstępna inwestycja marketingowa |
 | q5.opt.significant | Significant | Znaczące |
@@ -261,7 +261,7 @@
 | module.m1.b2 | WEEE, battery & packaging registration | Rejestracja WEEE, baterii i opakowań |
 | module.m1.b3 | Technical files, DoC, manuals | Dokumentacja techniczna, DoC, instrukcje |
 | module.m2.title | Warehousing & Fulfillment | Magazynowanie i fulfillment |
-| module.m2.b1 | Poland hub · EU-wide shipping | Hub w Polsce · wysyłka po całej UE |
+| module.m2.b1 | Poland hub · EU-wide shipping | Hub w Polsce · wysyłka do całej UE |
 | module.m2.b2 | B2B & B2C order fulfillment | Fulfillment zamówień B2B i B2C |
 | module.m2.b3 | Inventory & SKU management | Zarządzanie stanami i SKU |
 | module.m3.title | Sales & Channel Development | Sprzedaż i rozwój kanałów |
@@ -343,7 +343,7 @@
 | confirm.body | A CK Mediator partnership manager will contact you within **1 business day**. | Partnership Manager z CK Mediator skontaktuje się z Tobą w ciągu **1 dnia roboczego**. |
 | confirm.body_2 | In the meantime, you can: | W międzyczasie możesz: |
 | confirm.email | 📧 Email us at **vendors@ckmediator.pl** | 📧 Napisać na **vendors@ckmediator.pl** |
-| confirm.phone | 📞 Call **+48 22 123 43 38** (business hours CET) | 📞 Zadzwonić **+48 22 123 43 38** (godziny pracy CET) |
+| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 CET) | 📞 Zadzwonić **+48 22 123 43 38** (8:00 - 16:00 CET) |
 | confirm.back | Back to start ↻ | Wróć na start ↻ |
 
 ---
@@ -354,7 +354,7 @@
 |---|---|---|
 | footer.direct | Already know what you need? **Talk to our team directly →** | Wiesz już czego potrzebujesz? **Porozmawiaj bezpośrednio z naszym zespołem →** |
 | footer.copy | © 2026 CK Mediator · Warsaw, Poland | © 2026 CK Mediator · Warszawa, Polska |
-| footer.tag | VAD partner of Asian technology brands entering Central & Eastern Europe | Partner VAD azjatyckich marek technologicznych wchodzących na rynek Europy Środkowo-Wschodniej |
+| footer.tag | VAD partner of technology brands entering Central & Eastern Europe | Partner VAD marek technologicznych wchodzących na rynek Europy Środkowo-Wschodniej |
 | footer.legal | Legal | Regulamin |
 | footer.privacy | Privacy | Prywatność |
 | footer.contact | Contact | Kontakt |
