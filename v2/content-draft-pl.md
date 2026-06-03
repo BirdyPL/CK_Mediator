@@ -343,7 +343,7 @@
 | confirm.body | A CK Mediator partnership manager will contact you within **1 business day**. | Partnership Manager z CK Mediator skontaktuje się z Tobą w ciągu **1 dnia roboczego**. |
 | confirm.body_2 | In the meantime, you can: | W międzyczasie możesz: |
 | confirm.email | 📧 Email us at **vendors@ckmediator.pl** | 📧 Napisać na **vendors@ckmediator.pl** |
-| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 CET) | 📞 Zadzwonić **+48 22 123 43 38** (8:00 - 16:00 CET) |
+| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 Warsaw time) | 📞 Zadzwonić **+48 22 123 43 38** (8:00 - 16:00 czas warszawski) |
 | confirm.back | Back to start ↻ | Wróć na start ↻ |
 
 ---
