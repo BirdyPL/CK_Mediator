@@ -66,7 +66,7 @@
 | q2.title | Where is your brand in Europe today? | 您的品牌目前在欧洲处于什么阶段？ |
 | q2.help | No wrong answer — this just tells us where to start. | 无对错 — 仅帮助我们确定起点。 |
 | q2.opt.zero | Zero presence | 尚无业务 |
-| q2.opt.zero.sub | we're starting from scratch | 从零开始 |
+| q2.opt.zero.sub | We're starting from scratch | 从零开始 |
 | q2.opt.cross_border | Selling cross-border | 跨境销售中 |
 | q2.opt.cross_border.sub | Amazon, eBay, direct from Asia | Amazon、eBay、亚洲直发 |
 | q2.opt.distributor | We have a distributor, but need a real VAD partner | 已有分销商，但需要真正的 VAD 合作伙伴 |
@@ -81,11 +81,11 @@
 | q3.counter | Question 3 of 5 | 问题 3 / 共 5 题 |
 | q3.title | What's your goal for the next 12 months? | 未来 12 个月的目标是什么？ |
 | q3.opt.test | Test the market | 试水市场 |
-| q3.opt.test.sub | validate demand with low commitment | 以低投入验证需求 |
+| q3.opt.test.sub | Validate demand with low commitment | 以低投入验证需求 |
 | q3.opt.scale | Scale | 规模扩张 |
-| q3.opt.scale.sub | grow our existing base in CEE | 扩大中东欧现有基础 |
+| q3.opt.scale.sub | Grow our existing base in CEE | 扩大中东欧现有基础 |
 | q3.opt.leader | Become a category leader | 成为品类领导者 |
-| q3.opt.leader.sub | full multi-channel expansion | 全面多渠道扩张 |
+| q3.opt.leader.sub | Full multi-channel expansion | 全面多渠道扩张 |
 
 ---
 
@@ -343,7 +343,7 @@
 | confirm.body | A CK Mediator partnership manager will contact you within **1 business day**. | CK Mediator 合作经理将在 **1 个工作日内** 与您联系。 |
 | confirm.body_2 | In the meantime, you can: | 期间您也可以： |
 | confirm.email | 📧 Email us at **vendors@ckmediator.pl** | 📧 邮件联系 **vendors@ckmediator.pl** |
-| confirm.phone | 📞 Call **+48 22 123 43 38** (business hours CET) | 📞 致电 **+48 22 123 43 38** (中欧时间工作时段) |
+| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 CET) | 📞 致电 **+48 22 123 43 38** (8:00 - 16:00 中欧时间) |
 | confirm.back | Back to start ↻ | 返回首页 ↻ |
 
 ---
@@ -354,7 +354,7 @@
 |---|---|---|
 | footer.direct | Already know what you need? **Talk to our team directly →** | 已经清楚您的需求？**直接与我们的团队沟通 →** |
 | footer.copy | © 2026 CK Mediator · Warsaw, Poland | © 2026 CK Mediator · 波兰华沙 |
-| footer.tag | VAD partner of Asian technology brands entering Central & Eastern Europe | 助力亚洲科技品牌进入中东欧市场的 VAD 合作伙伴 |
+| footer.tag | VAD partner of technology brands entering Central & Eastern Europe | 助力科技品牌进入中东欧市场的 VAD 合作伙伴 |
 | footer.legal | Legal | 法律声明 |
 | footer.privacy | Privacy | 隐私 |
 | footer.contact | Contact | 联系我们 |
