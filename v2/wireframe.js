@@ -39,7 +39,7 @@ const GOAL_LABEL = {
 };
 const MARKETS_LABEL = {
   pl: 'Poland only',
-  v4: 'Poland and its neighbors',
+  baltics: 'Poland and the Baltics',
   cee: 'all of Central & Eastern Europe',
   eu: 'beyond CEE — the full EU'
 };
@@ -160,7 +160,7 @@ function joinList(arr) {
 
 function renderSummary() {
   const pkg = recommend();
-  document.getElementById('summary-title').textContent = `Your recommended track: ${PKG_NAME[pkg]}`;
+  document.getElementById('summary-title-pkg').textContent = PKG_NAME[pkg];
 
   document.querySelectorAll('.pkg').forEach(card => {
     const isRec = card.dataset.pkg === pkg;
