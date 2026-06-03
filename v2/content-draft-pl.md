@@ -81,11 +81,11 @@
 | q3.counter | Question 3 of 5 | Pytanie 3 z 5 |
 | q3.title | What's your goal for the next 12 months? | Jaki jest Twój cel na najbliższe 12 miesięcy? |
 | q3.opt.test | Test the market | Test rynku |
-| q3.opt.test.sub | validate demand with low commitment | weryfikacja popytu przy niskim zaangażowaniu |
+| q3.opt.test.sub | Validate demand with low commitment | Weryfikacja popytu przy niskim zaangażowaniu |
 | q3.opt.scale | Scale | Skalowanie |
-| q3.opt.scale.sub | grow our existing base in CEE | rozwój istniejącej obecności w CEE |
+| q3.opt.scale.sub | Grow our existing base in CEE | Rozwój istniejącej obecności w CEE |
 | q3.opt.leader | Become a category leader | Lider kategorii |
-| q3.opt.leader.sub | full multi-channel expansion | pełna ekspansja wielokanałowa |
+| q3.opt.leader.sub | Full multi-channel expansion | Pełna ekspansja wielokanałowa |
 
 ---
 
