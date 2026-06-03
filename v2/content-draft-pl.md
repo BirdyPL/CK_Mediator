@@ -66,7 +66,7 @@
 | q2.title | Where is your brand in Europe today? | Gdzie dziś jest Twoja marka w Europie? |
 | q2.help | No wrong answer — this just tells us where to start. | Nie ma złej odpowiedzi — to pomaga nam ustalić punkt startu. |
 | q2.opt.zero | Zero presence | Brak obecności |
-| q2.opt.zero.sub | we're starting from scratch | startujemy od zera |
+| q2.opt.zero.sub | We're starting from scratch | Startujemy od zera |
 | q2.opt.cross_border | Selling cross-border | Sprzedaż cross-border |
 | q2.opt.cross_border.sub | Amazon, eBay, direct from Asia | Amazon, eBay, bezpośrednio z Azji |
 | q2.opt.distributor | We have a distributor, but need a real VAD partner | Mamy dystrybutora, ale szukamy prawdziwego partnera VAD |
