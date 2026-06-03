@@ -11,7 +11,7 @@ const ROLLOUTS = {
   ],
   platinum: [
     { day: 'Day 1–30', text: 'PM team assembled + premium content production + all 5 marketplaces in prep' },
-    { day: 'Day 31–60', text: '5 marketplaces live (incl. TEMU 24h) + influencer wave 1 + D2C launch' },
+    { day: 'Day 31–60', text: '5 marketplaces live (incl. TEMU Local) + influencer wave 1 + D2C launch' },
     { day: 'Day 61–90', text: 'Retail POS rollout + service center activated + first category share gains' }
   ]
 };
