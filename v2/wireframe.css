@@ -18,13 +18,16 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   font-size: 16px;
+}
+html[lang="zh"] body {
+  font-family: 'Noto Sans SC', 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 a { color: var(--color-accent); text-decoration: none; }

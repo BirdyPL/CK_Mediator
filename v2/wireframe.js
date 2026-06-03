@@ -1,59 +1,3 @@
-const ROLLOUTS = {
-  silver: [
-    { day: 'Day 1–30', text: 'Market analysis delivered + Allegro Brand Zone setup' },
-    { day: 'Day 31–60', text: 'First listings live + customs flows onboarded' },
-    { day: 'Day 61–90', text: 'First sales + RMA process operational' }
-  ],
-  gold: [
-    { day: 'Day 1–30', text: 'Dedicated PM onboard + D2C webshop design + 3 marketplaces in setup' },
-    { day: 'Day 31–60', text: 'D2C store live + marketplaces selling + first co-op campaign' },
-    { day: 'Day 61–90', text: 'Optimization + first retail leaflet placement + partner credit lines active' }
-  ],
-  platinum: [
-    { day: 'Day 1–30', text: 'PM team assembled + premium content production + all 5 marketplaces in prep' },
-    { day: 'Day 31–60', text: '5 marketplaces live (incl. TEMU Local) + influencer wave 1 + D2C launch' },
-    { day: 'Day 61–90', text: 'Retail POS rollout + service center activated + first category share gains' }
-  ]
-};
-
-const PKG_NAME = {
-  silver: 'Silver — Test the Market',
-  gold: 'Gold — Scale Across CEE',
-  platinum: 'Platinum — Become a Category Leader'
-};
-const PKG_LABEL = { silver: 'Silver', gold: 'Gold', platinum: 'Platinum' };
-
-const CATEGORY_LABEL = {
-  phones: 'Smartphones & Mobile',
-  computing: 'Laptops & Computing',
-  cameras: 'Cameras & Surveillance',
-  av: 'Audio, Video & Projectors',
-  'smart-home': 'Smart Home & IoT',
-  tools: 'Power Tools & Hardware',
-  mixed: 'a mixed portfolio'
-};
-const GOAL_LABEL = {
-  test: 'testing the market',
-  scale: 'scaling',
-  leader: 'becoming a category leader'
-};
-const MARKETS_LABEL = {
-  pl: 'Poland only',
-  baltics: 'Poland and the Baltics',
-  cee: 'all of Central & Eastern Europe',
-  eu: 'beyond CEE — the full EU'
-};
-const MODULE_LABELS = {
-  m1: 'Regulatory & Compliance',
-  m2: 'Warehousing & Fulfillment',
-  m3: 'Sales & Channel Development',
-  m4: 'Marketing & PR',
-  m5: 'Warranty & Service Center',
-  m6: 'Financial & Invoicing Support',
-  m7: 'EU Authorized Representative',
-  m8: 'Market Intelligence & Reporting'
-};
-
 const SCREEN_ORDER = ['welcome', 'q1', 'q2', 'q3', 'q4', 'q5', 'summary'];
 const QUESTION_SCREENS = ['q1', 'q2', 'q3', 'q4', 'q5'];
 const SCREEN_TO_QUESTION = { q1: 'category', q2: 'presence', q3: 'goal', q4: 'markets', q5: 'budget' };
@@ -63,8 +7,16 @@ const initialAnswers = () => ({ category: [], presence: null, goal: null, market
 const state = {
   current: 'welcome',
   answers: initialAnswers(),
-  modules: new Set()
+  modules: new Set(),
+  formContext: null
 };
+
+const PKG_KEYS = ['silver', 'gold', 'platinum'];
+const MODULE_KEYS = ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8'];
+
+function pkgFullName(pkg) {
+  return t(`summary.title.${pkg}`);
+}
 
 function show(screen) {
   document.querySelectorAll('.screen').forEach(s => {
@@ -91,7 +43,7 @@ function show(screen) {
 function updateProgress() {
   const screenEl = document.querySelector(`.screen[data-screen="${state.current}"]`);
   const step = parseInt(screenEl.dataset.step, 10);
-  document.getElementById('progress-text').textContent = `Step ${step} of 5`;
+  document.getElementById('progress-text').textContent = t('progress.step', { n: step });
   document.getElementById('progress-fill').style.width = `${(step / 5) * 100}%`;
 
   const dots = QUESTION_SCREENS.map((_, i) => {
@@ -117,10 +69,10 @@ function updateContinueButton() {
   const btn = document.getElementById('continue-btn');
   if (screen === 'q5') {
     btn.disabled = false;
-    btn.textContent = answered ? 'See your plan →' : 'Skip & see plan →';
+    btn.textContent = answered ? t('nav.see_plan') : t('nav.skip_see');
   } else {
     btn.disabled = !answered;
-    btn.textContent = 'Continue →';
+    btn.textContent = t('nav.continue');
   }
 }
 
@@ -160,7 +112,7 @@ function joinList(arr) {
 
 function renderSummary() {
   const pkg = recommend();
-  document.getElementById('summary-title-pkg').textContent = PKG_NAME[pkg];
+  document.getElementById('summary-title-pkg').textContent = pkgFullName(pkg);
 
   document.querySelectorAll('.pkg').forEach(card => {
     const isRec = card.dataset.pkg === pkg;
@@ -168,7 +120,7 @@ function renderSummary() {
     const tierEl = card.querySelector('.pkg-tier');
     const existingBadge = tierEl.querySelector('.pkg-badge');
     if (isRec && !existingBadge) {
-      tierEl.insertAdjacentHTML('beforeend', '<span class="pkg-badge">Recommended for you</span>');
+      tierEl.insertAdjacentHTML('beforeend', `<span class="pkg-badge" data-i18n="pkg.recommended_badge">${t('pkg.recommended_badge')}</span>`);
     } else if (!isRec && existingBadge) {
       existingBadge.remove();
     }
@@ -176,25 +128,32 @@ function renderSummary() {
 
   const why = [];
   if (state.answers.category && state.answers.category.length) {
-    const labels = state.answers.category.map(c => CATEGORY_LABEL[c]);
-    why.push(`You're in <strong>${joinList(labels)}</strong> — matches our strongest channels.`);
+    const labels = state.answers.category.map(c => t(`category.label.${c === 'smart-home' ? 'smart_home' : c}`));
+    why.push(tHtml('summary.why.template.category', { categories: joinList(labels) }));
   }
   if (state.answers.goal) {
-    why.push(`Your 12-month goal is <strong>${GOAL_LABEL[state.answers.goal]}</strong> — ${PKG_LABEL[pkg]} is built exactly for this.`);
+    why.push(tHtml('summary.why.template.goal', {
+      goal: t(`goal.label.${state.answers.goal}`),
+      pkg: t(`pkg.label.${pkg}`)
+    }));
   }
   if (state.answers.markets) {
-    why.push(`You're targeting <strong>${MARKETS_LABEL[state.answers.markets]}</strong> — we cover that under one contract.`);
+    why.push(tHtml('summary.why.template.markets', { markets: t(`markets.label.${state.answers.markets}`) }));
   }
   document.getElementById('why-list').innerHTML = why.length
     ? why.map(w => `<li>${w}</li>`).join('')
-    : '<li>Tell us a bit about your goals and we\'ll tailor the plan.</li>';
+    : `<li>${t('summary.why.empty')}</li>`;
 
-  document.getElementById('rollout-pkg').textContent = PKG_LABEL[pkg];
-  document.getElementById('rollout-list').innerHTML = ROLLOUTS[pkg].map(item =>
-    `<li><span class="rollout-day">${item.day}</span>${item.text}</li>`
+  const rolloutHeading = document.getElementById('rollout-heading');
+  rolloutHeading.innerHTML = tHtml('rollout.heading', { pkg: `<span id="rollout-pkg">${t(`pkg.label.${pkg}`)}</span>` });
+
+  const dayKeys = ['rollout.d1', 'rollout.d2', 'rollout.d3'];
+  const textKeys = [`rollout.${pkg}.t1`, `rollout.${pkg}.t2`, `rollout.${pkg}.t3`];
+  document.getElementById('rollout-list').innerHTML = dayKeys.map((dk, i) =>
+    `<li><span class="rollout-day">${t(dk)}</span>${t(textKeys[i])}</li>`
   ).join('');
 
-  document.getElementById('form-package-input').value = PKG_NAME[pkg];
+  computePackageInput('wizard');
 }
 
 function selectOption(btn) {
@@ -228,11 +187,13 @@ function toggleModule(card) {
   if (state.modules.has(key)) {
     state.modules.delete(key);
     card.classList.remove('is-selected');
-    btn.textContent = '+ Add';
+    btn.dataset.i18n = 'modules.add';
+    btn.textContent = t('modules.add');
   } else {
     state.modules.add(key);
     card.classList.add('is-selected');
-    btn.textContent = '✓ Added';
+    btn.dataset.i18n = 'modules.added';
+    btn.textContent = t('modules.added');
   }
   updateScopeBar();
 }
@@ -241,21 +202,30 @@ function updateScopeBar() {
   const bar = document.getElementById('scope-bar');
   const count = state.modules.size;
   bar.hidden = !(state.current === 'modules' && count > 0);
-  document.getElementById('scope-count').textContent = count === 1 ? '1 module selected' : `${count} modules selected`;
-  document.getElementById('scope-list').textContent = Array.from(state.modules).map(m => MODULE_LABELS[m]).join(' · ');
+  const countText = count === 1 ? t('scope.count_one') : t('scope.count_many', { n: count });
+  document.getElementById('scope-count').textContent = countText;
+  document.getElementById('scope-list').textContent = Array.from(state.modules).map(m => t(`module.${m}.title`)).join(' · ');
+}
+
+function computePackageInput(context) {
+  const input = document.getElementById('form-package-input');
+  if (!input) return;
+  if (context === 'direct') {
+    input.value = t('form.value.direct');
+  } else if (context === 'modules') {
+    const labels = Array.from(state.modules).map(m => t(`module.${m}.title`));
+    input.value = labels.length
+      ? t('form.value.custom_with', { modules: labels.join(', ') })
+      : t('form.value.custom_empty');
+  } else {
+    input.value = pkgFullName(recommend());
+  }
 }
 
 function openForm(context) {
   const ctx = context || 'wizard';
-  const input = document.getElementById('form-package-input');
-  if (ctx === 'direct') {
-    input.value = 'Direct inquiry (no wizard run)';
-  } else if (ctx === 'modules') {
-    const labels = Array.from(state.modules).map(m => MODULE_LABELS[m]);
-    input.value = labels.length ? `Custom: ${labels.join(', ')}` : 'Custom configuration (no modules selected)';
-  } else {
-    input.value = PKG_NAME[recommend()];
-  }
+  state.formContext = ctx;
+  computePackageInput(ctx);
   document.querySelector('.modal[data-modal="form"]').hidden = false;
   document.body.style.overflow = 'hidden';
 }
@@ -263,6 +233,7 @@ function openForm(context) {
 function closeForm() {
   document.querySelector('.modal[data-modal="form"]').hidden = true;
   document.body.style.overflow = '';
+  state.formContext = null;
 }
 
 function restart() {
@@ -270,12 +241,34 @@ function restart() {
   state.modules.clear();
   document.querySelectorAll('.option.is-selected').forEach(o => o.classList.remove('is-selected'));
   document.querySelectorAll('.module.is-selected').forEach(m => m.classList.remove('is-selected'));
-  document.querySelectorAll('.module-toggle').forEach(t => { t.textContent = '+ Add'; });
+  document.querySelectorAll('.module-toggle').forEach(b => {
+    b.dataset.i18n = 'modules.add';
+    b.textContent = t('modules.add');
+  });
   document.getElementById('intake-form').reset();
   show('welcome');
 }
 
+function onLanguageChange() {
+  if (state.current === 'summary') {
+    renderSummary();
+  } else if (QUESTION_SCREENS.includes(state.current)) {
+    updateProgress();
+    updateContinueButton();
+  }
+  updateScopeBar();
+  if (state.formContext) {
+    computePackageInput(state.formContext);
+  }
+}
+
 document.addEventListener('click', (e) => {
+  const langBtn = e.target.closest('.lang-btn');
+  if (langBtn && langBtn.dataset.lang) {
+    setLanguage(langBtn.dataset.lang);
+    return;
+  }
+
   const actionEl = e.target.closest('[data-action]');
   if (actionEl) {
     e.preventDefault();
@@ -289,7 +282,7 @@ document.addEventListener('click', (e) => {
       case 'open-modules': show('modules'); break;
       case 'request-quote': openForm('modules'); break;
       case 'close-form': closeForm(); break;
-      case 'download-pdf': alert('PDF generation — wire-up planned for next build step.'); break;
+      case 'download-pdf': alert(t('alert.pdf')); break;
       case 'restart': restart(); break;
     }
     return;
@@ -316,3 +309,5 @@ document.addEventListener('keydown', (e) => {
     closeForm();
   }
 });
+
+initI18n();
