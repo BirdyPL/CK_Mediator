@@ -343,7 +343,7 @@
 | confirm.body | A CK Mediator partnership manager will contact you within **1 business day**. | CK Mediator 合作经理将在 **1 个工作日内** 与您联系。 |
 | confirm.body_2 | In the meantime, you can: | 期间您也可以： |
 | confirm.email | 📧 Email us at **vendors@ckmediator.pl** | 📧 邮件联系 **vendors@ckmediator.pl** |
-| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 CET) | 📞 致电 **+48 22 123 43 38** (8:00 - 16:00 中欧时间) |
+| confirm.phone | 📞 Call **+48 22 123 43 38** (8:00 - 16:00 Warsaw time) | 📞 致电 **+48 22 123 43 38** (8:00 - 16:00 华沙时间) |
 | confirm.back | Back to start ↻ | 返回首页 ↻ |
 
 ---
