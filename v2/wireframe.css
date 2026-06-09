@@ -412,6 +412,24 @@ a:hover { text-decoration: underline; }
 .field-readonly input { background: var(--color-bg-subtle); cursor: not-allowed; color: var(--color-text-secondary); }
 .field-inline { display: flex; gap: 8px; align-items: center; font-size: 14px; margin: -8px 0 16px; color: var(--color-text-secondary); }
 .privacy { font-size: 12px; color: var(--color-text-muted); margin: 16px 0; line-height: 1.5; }
+.field-consent {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin: 12px 0; padding: 10px 12px;
+  font-size: 12px; color: var(--color-text-secondary);
+  line-height: 1.5;
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+.field-consent input[type="checkbox"] {
+  width: 16px; height: 16px;
+  margin-top: 2px; flex-shrink: 0;
+  cursor: pointer;
+}
+.field-consent span { flex: 1; min-width: 0; }
+.field-consent em { color: var(--color-danger); font-style: normal; font-weight: 700; margin-right: 2px; }
+.field-consent-required { border-color: var(--color-border-strong); }
+.field-consent:hover { background: white; }
 .form-actions { margin: 24px 0 0; }
 
 /* ========= CONFIRM ========= */
@@ -637,6 +655,37 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 .scope-bar .btn-primary:hover { background: var(--color-accent-bg); color: var(--color-accent); }
+
+/* ========= COOKIE BANNER ========= */
+.cookie-banner {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: white;
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.08);
+  z-index: 200;
+  padding: 16px 24px;
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; gap: 20px; align-items: center; justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cookie-banner-text {
+  flex: 1; min-width: 260px;
+  font-size: 13px; line-height: 1.5;
+  color: var(--color-text);
+  margin: 0;
+}
+.cookie-banner-text strong {
+  display: block; font-weight: 700;
+  margin-bottom: 4px;
+}
+.cookie-banner-text a.cookie-link {
+  color: var(--color-accent); font-weight: 600;
+}
+.cookie-banner-actions { flex-shrink: 0; }
+.cookie-banner-actions .btn { padding: 10px 22px; }
 
 /* ========= RESPONSIVE ========= */
 @media (max-width: 880px) {

@@ -481,6 +481,15 @@
 
         <p class="privacy" data-i18n="form.privacy">We use your data only to respond to this inquiry. GDPR-compliant. No third-party sharing.</p>
 
+        <label class="field-consent field-consent-required">
+          <input type="checkbox" name="consent_data" required />
+          <span data-i18n="form.consent.data">I consent to the processing of my personal data.</span>
+        </label>
+        <label class="field-consent">
+          <input type="checkbox" name="consent_marketing" />
+          <span data-i18n="form.consent.marketing">I consent to receiving commercial information.</span>
+        </label>
+
         <div class="form-actions">
           <button class="btn btn-primary btn-lg" type="submit" data-i18n="form.submit">Send to CK Mediator →</button>
         </div>
@@ -514,6 +523,19 @@
       <p class="footer-links"><a href="#" data-i18n="footer.legal">Legal</a> · <a href="#" data-i18n="footer.privacy">Privacy</a> · <a href="#" data-i18n="footer.contact">Contact</a></p>
     </div>
   </footer>
+
+  <!-- ========= COOKIE BANNER ========= -->
+  <div class="cookie-banner" id="cookie-banner" hidden>
+    <div class="cookie-banner-inner">
+      <p class="cookie-banner-text">
+        <strong data-i18n="cookie.title">Dear User!</strong>
+        <span data-i18n="cookie.body">This site uses cookies in accordance with our Cookie Policy.</span>
+      </p>
+      <div class="cookie-banner-actions">
+        <button class="btn btn-primary" type="button" data-action="dismiss-cookie" data-i18n="cookie.button">OK</button>
+      </div>
+    </div>
+  </div>
 
   <script src="i18n.js"></script>
   <script src="wireframe.js"></script>

@@ -237,7 +237,14 @@ const TRANSLATIONS = {
     'footer.privacy': 'Privacy',
     'footer.contact': 'Contact',
 
-    'alert.pdf': 'PDF generation — wire-up planned for next build step.'
+    'alert.pdf': 'PDF generation — wire-up planned for next build step.',
+
+    'cookie.title': 'Dear User!',
+    'cookie.body': 'This site uses cookies to deliver services in accordance with the <a href="#" class="cookie-link">Cookie Policy</a>. You can specify storage and access conditions for cookies in your browser.',
+    'cookie.button': 'OK',
+
+    'form.consent.data': '<em>*</em> I consent to the processing of my personal data by CK Mediator Polska sp. z o.o., sp. k. The controller of your personal data is CK Mediator sp. z o.o., sp. k. with registered office in Warsaw, ul. Patriotów 110.',
+    'form.consent.marketing': 'I consent to receiving commercial information by electronic means at the email addresses provided in this form, sent by CK Mediator Polska sp. z o.o., sp. k. (Warsaw, ul. Patriotów 110), pursuant to the Polish Act of 18 July 2002 on Providing Services by Electronic Means (Journal of Laws 2002, No. 144, item 1204, as amended) and Regulation (EU) 2016/679 (GDPR).'
   },
 
   pl: {
@@ -478,7 +485,14 @@ const TRANSLATIONS = {
     'footer.privacy': 'Prywatność',
     'footer.contact': 'Kontakt',
 
-    'alert.pdf': 'Generowanie PDF — implementacja w kolejnym kroku.'
+    'alert.pdf': 'Generowanie PDF — implementacja w kolejnym kroku.',
+
+    'cookie.title': 'Drogi Użytkowniku!',
+    'cookie.body': 'Strona korzysta z plików cookie w celu realizacji usług zgodnie z <a href="#" class="cookie-link">Polityką Cookies</a>. Możesz określić warunki przechowywania lub dostępu mechanizmu cookie w Twojej przeglądarce.',
+    'cookie.button': 'OK',
+
+    'form.consent.data': '<em>*</em> Wyrażam zgodę na przetwarzanie moich danych osobowych przez CK Mediator Polska sp. z o.o., sp. k. Administratorem Twoich danych osobowych jest CK Mediator sp. z o.o., sp. k. z siedzibą w Warszawie, ul. Patriotów 110.',
+    'form.consent.marketing': 'Wyrażam zgodę na przesyłanie mi informacji handlowych drogą elektroniczną na wskazane w formularzu rejestracyjnym adresy e-mail przez CK Mediator Polska sp. z o.o., sp. k. z siedzibą w Warszawie, ul. Patriotów 110, zgodnie z ustawą z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Z 2002r., Nr 144, poz. 1204 z późn. zm.) oraz zgodne z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.'
   },
 
   zh: {
@@ -719,7 +733,14 @@ const TRANSLATIONS = {
     'footer.privacy': '隐私',
     'footer.contact': '联系我们',
 
-    'alert.pdf': 'PDF 生成功能 — 将在下一步实现。'
+    'alert.pdf': 'PDF 生成功能 — 将在下一步实现。',
+
+    'cookie.title': '尊敬的用户！',
+    'cookie.body': '本网站根据 <a href="#" class="cookie-link">Cookie 政策</a> 使用 Cookie 以提供服务。您可以在浏览器中设置 Cookie 的存储或访问条件。',
+    'cookie.button': '确定',
+
+    'form.consent.data': '<em>*</em> 本人同意 CK Mediator Polska sp. z o.o., sp. k. 处理本人的个人数据。您的个人数据控制者为注册地址位于波兰华沙 ul. Patriotów 110 的 CK Mediator sp. z o.o., sp. k.。',
+    'form.consent.marketing': '本人同意 CK Mediator Polska sp. z o.o., sp. k.（注册地址：波兰华沙 ul. Patriotów 110）按照 2002 年 7 月 18 日《波兰电子服务提供法案》（《波兰法律公报》2002 年第 144 号第 1204 条，含后续修订）以及欧洲议会和理事会 2016 年 4 月 27 日的《通用数据保护条例》(EU) 2016/679，通过电子方式向本人在本表单中提供的电子邮箱地址发送商业信息。'
   }
 };
 

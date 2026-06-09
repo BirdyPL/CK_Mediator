@@ -284,6 +284,7 @@ document.addEventListener('click', (e) => {
       case 'close-form': closeForm(); break;
       case 'download-pdf': alert(t('alert.pdf')); break;
       case 'restart': restart(); break;
+      case 'dismiss-cookie': dismissCookieBanner(); break;
     }
     return;
   }
@@ -310,4 +311,19 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+function initCookieBanner() {
+  const banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+  let accepted = false;
+  try { accepted = localStorage.getItem('ck_cookie_ok') === '1'; } catch (_) {}
+  banner.hidden = accepted;
+}
+
+function dismissCookieBanner() {
+  const banner = document.getElementById('cookie-banner');
+  if (banner) banner.hidden = true;
+  try { localStorage.setItem('ck_cookie_ok', '1'); } catch (_) {}
+}
+
 initI18n();
+initCookieBanner();
