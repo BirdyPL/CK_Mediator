@@ -222,10 +222,25 @@ function computePackageInput(context) {
   }
 }
 
+function computeWizardInput() {
+  const wizardInput = document.getElementById('form-wizard-input');
+  if (wizardInput) {
+    wizardInput.value = JSON.stringify({
+      context: state.formContext,
+      answers: state.answers,
+      modules: Array.from(state.modules),
+      recommended: recommend()
+    });
+  }
+  const langInput = document.getElementById('form-language-input');
+  if (langInput) langInput.value = currentLang;
+}
+
 function openForm(context) {
   const ctx = context || 'wizard';
   state.formContext = ctx;
   computePackageInput(ctx);
+  computeWizardInput();
   document.querySelector('.modal[data-modal="form"]').hidden = false;
   document.body.style.overflow = 'hidden';
 }
@@ -301,6 +316,7 @@ document.addEventListener('click', (e) => {
 
 document.getElementById('intake-form').addEventListener('submit', (e) => {
   e.preventDefault();
+  computeWizardInput(); // refresh hidden fields with the latest answers before capture
   closeForm();
   show('confirm');
 });

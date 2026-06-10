@@ -479,6 +479,10 @@
           <textarea name="notes" rows="3"></textarea>
         </label>
 
+        <!-- Wizard answers (category, presence, goal, markets, budget, selected modules, language) serialized as JSON. Populated by wireframe.js so they are submitted with the inquiry. -->
+        <input type="hidden" name="wizard_answers" id="form-wizard-input" />
+        <input type="hidden" name="language" id="form-language-input" />
+
         <p class="privacy" data-i18n="form.privacy">We use your data only to respond to this inquiry. GDPR-compliant. No third-party sharing.</p>
 
         <label class="field-consent field-consent-required">
