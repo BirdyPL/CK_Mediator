@@ -4,10 +4,10 @@ const TRANSLATIONS = {
     'topbar.vad_alt': 'VAD — Value Added Distributor',
     'progress.step': 'Step {n} of 5',
 
-    'welcome.eyebrow': 'CK MEDIATOR · VAD · SINCE 2003',
+    'welcome.eyebrow': 'CK MEDIATOR · VAD · SINCE 1997',
     'welcome.title': 'Your Gateway to the European Market',
     'welcome.mission': 'CK Mediator helps manufacturers and vendors enter and scale in the EU with full distribution, compliance, logistics, and sales enablement — under one roof.',
-    'welcome.value_1': '20+ years in EU consumer electronics distribution',
+    'welcome.value_1': '25+ years in EU consumer electronics distribution',
     'welcome.value_2': 'CE, WEEE, battery & packaging compliance handled end-to-end',
     'welcome.value_3': 'Poland logistics hub · EU-wide fulfillment',
     'welcome.value_4': '**B2B retail chains & B2C e-commerce** — one VAD partnership',
@@ -18,7 +18,7 @@ const TRANSLATIONS = {
     'welcome.sub': 'Personalized Silver / Gold / Platinum package.',
     'welcome.btn_start': 'Start →',
     'welcome.btn_custom': 'Custom Plan',
-    'welcome.trusted': 'Trusted by Ulefone, Oukitel, Imou, Dahua, Energizer, Netatmo, Denver, Nedis, Technaxx, Skil.',
+    'welcome.trusted': 'Trusted by Ulefone, Oukitel, Imou, Dahua, Energizer, Netatmo, Denver, Nedis, Technaxx, Skil, Dangbei, ZTE, Jabra.',
 
     'q1.counter': 'Question 1 of 5',
     'q1.title': 'What does your brand sell?',
@@ -103,6 +103,7 @@ const TRANSLATIONS = {
     'pkg.silver.tier': 'SILVER',
     'pkg.silver.name': 'Test the Market',
     'pkg.silver.sub': 'For brands validating Polish demand with minimum commitment.',
+    'pkg.silver.bullet_channel': 'Full access to B2B wholesale channel and partner network',
     'pkg.silver.bullet_1': 'Market entry consulting — positioning, competition analysis',
     'pkg.silver.bullet_2': 'Allegro Brand Zone — 1 marketplace launched',
     'pkg.silver.bullet_3': 'Warsaw warehousing + customs + basic RMA',
@@ -125,7 +126,7 @@ const TRANSLATIONS = {
     'pkg.platinum.everything': 'Everything in Gold, plus:',
     'pkg.platinum.bullet_1': 'Dedicated PM team (full-time, multi-person)',
     'pkg.platinum.bullet_2': '5 marketplaces — adds ERLI + **TEMU Local**',
-    'pkg.platinum.bullet_3': '**7 retail chains** — Media Expert, RTV Euro AGD, MediaMarkt, x-kom, Komputronik, Euronics, Topo Centras',
+    'pkg.platinum.bullet_3': '**5 retail chains** — Media Expert, RTV Euro AGD, MediaMarkt, x-kom, Komputronik',
     'pkg.platinum.bullet_4': 'Influencer marketing + POS execution in physical retail',
     'pkg.platinum.bullet_5': 'CK authorized service center + full channel credit',
     'pkg.recommended_badge': 'Recommended for you',
@@ -244,7 +245,8 @@ const TRANSLATIONS = {
     'cookie.button': 'OK',
 
     'form.consent.data': '<em>*</em> I consent to the processing of my personal data by CK Mediator Polska sp. z o.o., sp. k. The controller of your personal data is CK Mediator sp. z o.o., sp. k. with registered office in Warsaw, ul. Patriotów 110.',
-    'form.consent.marketing': 'I consent to receiving commercial information by electronic means at the email addresses provided in this form, sent by CK Mediator Polska sp. z o.o., sp. k. (Warsaw, ul. Patriotów 110), pursuant to the Polish Act of 18 July 2002 on Providing Services by Electronic Means (Journal of Laws 2002, No. 144, item 1204, as amended) and Regulation (EU) 2016/679 (GDPR).'
+    'form.consent.marketing': 'I consent to receiving commercial information by electronic means at the email addresses provided in this form, sent by CK Mediator Polska sp. z o.o., sp. k. (Warsaw, ul. Patriotów 110), pursuant to the Polish Act of 18 July 2002 on Providing Services by Electronic Means (Journal of Laws 2002, No. 144, item 1204, as amended) and Regulation (EU) 2016/679 (GDPR).',
+    'form.decision_note': 'Final partnership decision follows our review of submitted terms.'
   },
 
   pl: {
@@ -252,10 +254,10 @@ const TRANSLATIONS = {
     'topbar.vad_alt': 'VAD — Value Added Distributor',
     'progress.step': 'Krok {n} z 5',
 
-    'welcome.eyebrow': 'CK MEDIATOR · VAD · OD 2003',
+    'welcome.eyebrow': 'CK MEDIATOR · VAD · OD 1997',
     'welcome.title': 'Twoja brama na rynek europejski',
     'welcome.mission': 'CK Mediator pomaga producentom i vendorom wejść i rozwijać się na rynku UE — pełna dystrybucja, zgodność prawna, logistyka i wsparcie sprzedażowe pod jednym dachem.',
-    'welcome.value_1': 'Ponad 20 lat w dystrybucji elektroniki użytkowej w UE',
+    'welcome.value_1': 'Ponad 25 lat w dystrybucji elektroniki użytkowej w UE',
     'welcome.value_2': 'CE, WEEE, baterie i opakowania — pełna obsługa zgodności',
     'welcome.value_3': 'Centrum logistyczne w Polsce · fulfillment w całej UE',
     'welcome.value_4': '**Sieci retail B2B i e-commerce B2C** — jedna umowa VAD',
@@ -266,7 +268,7 @@ const TRANSLATIONS = {
     'welcome.sub': 'Spersonalizowany pakiet Silver / Gold / Platinum.',
     'welcome.btn_start': 'Start →',
     'welcome.btn_custom': 'Plan własny',
-    'welcome.trusted': 'Zaufali nam: Ulefone, Oukitel, Imou, Dahua, Energizer, Netatmo, Denver, Nedis, Technaxx, Skil.',
+    'welcome.trusted': 'Zaufali nam: Ulefone, Oukitel, Imou, Dahua, Energizer, Netatmo, Denver, Nedis, Technaxx, Skil, Dangbei, ZTE, Jabra.',
 
     'q1.counter': 'Pytanie 1 z 5',
     'q1.title': 'Co sprzedaje Twoja marka?',
@@ -351,6 +353,7 @@ const TRANSLATIONS = {
     'pkg.silver.tier': 'SILVER',
     'pkg.silver.name': 'Test rynku',
     'pkg.silver.sub': 'Dla marek walidujących popyt na polskim rynku przy minimalnym zaangażowaniu.',
+    'pkg.silver.bullet_channel': 'Pełen dostęp do kanału hurtowego B2B i sieci partnerskiej',
     'pkg.silver.bullet_1': 'Konsulting wejścia na rynek — pozycjonowanie, analiza konkurencji',
     'pkg.silver.bullet_2': 'Allegro Strefa Marek — 1 marketplace uruchomiony',
     'pkg.silver.bullet_3': 'Magazyn w Warszawie + odprawa celna + podstawowa obsługa RMA',
@@ -373,7 +376,7 @@ const TRANSLATIONS = {
     'pkg.platinum.everything': 'Wszystko z pakietu Gold, plus:',
     'pkg.platinum.bullet_1': 'Dedykowany zespół PM (pełny etat, wieloosobowy)',
     'pkg.platinum.bullet_2': '5 marketplaces — dochodzi ERLI + **TEMU Local**',
-    'pkg.platinum.bullet_3': '**7 sieci retail** — Media Expert, RTV Euro AGD, MediaMarkt, x-kom, Komputronik, Euronics, Topo Centras',
+    'pkg.platinum.bullet_3': '**5 sieci retail** — Media Expert, RTV Euro AGD, MediaMarkt, x-kom, Komputronik',
     'pkg.platinum.bullet_4': 'Influencer marketing + obsługa POS w sklepach stacjonarnych',
     'pkg.platinum.bullet_5': 'Autoryzowany serwis CK + pełne kredytowanie kanału',
     'pkg.recommended_badge': 'Rekomendowane dla Ciebie',
@@ -492,7 +495,8 @@ const TRANSLATIONS = {
     'cookie.button': 'OK',
 
     'form.consent.data': '<em>*</em> Wyrażam zgodę na przetwarzanie moich danych osobowych przez CK Mediator Polska sp. z o.o., sp. k. Administratorem Twoich danych osobowych jest CK Mediator sp. z o.o., sp. k. z siedzibą w Warszawie, ul. Patriotów 110.',
-    'form.consent.marketing': 'Wyrażam zgodę na przesyłanie mi informacji handlowych drogą elektroniczną na wskazane w formularzu rejestracyjnym adresy e-mail przez CK Mediator Polska sp. z o.o., sp. k. z siedzibą w Warszawie, ul. Patriotów 110, zgodnie z ustawą z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Z 2002r., Nr 144, poz. 1204 z późn. zm.) oraz zgodne z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.'
+    'form.consent.marketing': 'Wyrażam zgodę na przesyłanie mi informacji handlowych drogą elektroniczną na wskazane w formularzu rejestracyjnym adresy e-mail przez CK Mediator Polska sp. z o.o., sp. k. z siedzibą w Warszawie, ul. Patriotów 110, zgodnie z ustawą z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz. U. Z 2002r., Nr 144, poz. 1204 z późn. zm.) oraz zgodne z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.',
+    'form.decision_note': 'Decyzja o współpracy zapadnie po przeanalizowaniu warunków współpracy.'
   },
 
   zh: {
@@ -500,10 +504,10 @@ const TRANSLATIONS = {
     'topbar.vad_alt': 'VAD — 增值分销商',
     'progress.step': '第 {n} 步 / 共 5 步',
 
-    'welcome.eyebrow': 'CK MEDIATOR · VAD · 始于 2003',
+    'welcome.eyebrow': 'CK MEDIATOR · VAD · 始于 1997',
     'welcome.title': '您进入欧洲市场的门户',
     'welcome.mission': 'CK Mediator 为制造商和供应商提供进入欧盟市场并扩大规模的一站式服务 — 涵盖全面分销、合规、物流和销售赋能。',
-    'welcome.value_1': '20+ 年欧盟消费电子分销经验',
+    'welcome.value_1': '25+ 年欧盟消费电子分销经验',
     'welcome.value_2': 'CE、WEEE、电池及包装合规全程托管',
     'welcome.value_3': '波兰物流中心 · 覆盖全欧盟履约',
     'welcome.value_4': '**B2B 零售连锁 & B2C 电商** — 一份 VAD 合作协议',
@@ -514,7 +518,7 @@ const TRANSLATIONS = {
     'welcome.sub': '个性化推荐 Silver / Gold / Platinum 套餐。',
     'welcome.btn_start': '开始 →',
     'welcome.btn_custom': '自定义方案',
-    'welcome.trusted': 'Ulefone、Oukitel、Imou、Dahua、Energizer、Netatmo、Denver、Nedis、Technaxx、Skil 信赖之选。',
+    'welcome.trusted': 'Ulefone、Oukitel、Imou、Dahua、Energizer、Netatmo、Denver、Nedis、Technaxx、Skil、Dangbei、ZTE、Jabra 信赖之选。',
 
     'q1.counter': '问题 1 / 共 5 题',
     'q1.title': '您的品牌销售什么产品？',
@@ -599,6 +603,7 @@ const TRANSLATIONS = {
     'pkg.silver.tier': 'SILVER',
     'pkg.silver.name': '市场试水',
     'pkg.silver.sub': '适合以最小投入验证波兰市场需求的品牌。',
+    'pkg.silver.bullet_channel': '全面接入 B2B 批发渠道及合作伙伴网络',
     'pkg.silver.bullet_1': '市场进入咨询 — 定位、竞争分析',
     'pkg.silver.bullet_2': 'Allegro 品牌专区 — 上线 1 个电商平台',
     'pkg.silver.bullet_3': '华沙仓储 + 清关 + 基础售后 (RMA)',
@@ -621,7 +626,7 @@ const TRANSLATIONS = {
     'pkg.platinum.everything': '包含 Gold 全部内容，并增加：',
     'pkg.platinum.bullet_1': '专属产品经理团队 (全职、多人配置)',
     'pkg.platinum.bullet_2': '5 个电商平台 — 新增 ERLI 与 **TEMU Local**',
-    'pkg.platinum.bullet_3': '**7 家零售连锁** — Media Expert、RTV Euro AGD、MediaMarkt、x-kom、Komputronik、Euronics、Topo Centras',
+    'pkg.platinum.bullet_3': '**5 家零售连锁** — Media Expert、RTV Euro AGD、MediaMarkt、x-kom、Komputronik',
     'pkg.platinum.bullet_4': 'KOL 营销 + 线下零售门店 POS 执行',
     'pkg.platinum.bullet_5': 'CK 授权售后服务中心 + 全渠道授信',
     'pkg.recommended_badge': '为您推荐',
@@ -740,7 +745,8 @@ const TRANSLATIONS = {
     'cookie.button': '确定',
 
     'form.consent.data': '<em>*</em> 本人同意 CK Mediator Polska sp. z o.o., sp. k. 处理本人的个人数据。您的个人数据控制者为注册地址位于波兰华沙 ul. Patriotów 110 的 CK Mediator sp. z o.o., sp. k.。',
-    'form.consent.marketing': '本人同意 CK Mediator Polska sp. z o.o., sp. k.（注册地址：波兰华沙 ul. Patriotów 110）按照 2002 年 7 月 18 日《波兰电子服务提供法案》（《波兰法律公报》2002 年第 144 号第 1204 条，含后续修订）以及欧洲议会和理事会 2016 年 4 月 27 日的《通用数据保护条例》(EU) 2016/679，通过电子方式向本人在本表单中提供的电子邮箱地址发送商业信息。'
+    'form.consent.marketing': '本人同意 CK Mediator Polska sp. z o.o., sp. k.（注册地址：波兰华沙 ul. Patriotów 110）按照 2002 年 7 月 18 日《波兰电子服务提供法案》（《波兰法律公报》2002 年第 144 号第 1204 条，含后续修订）以及欧洲议会和理事会 2016 年 4 月 27 日的《通用数据保护条例》(EU) 2016/679，通过电子方式向本人在本表单中提供的电子邮箱地址发送商业信息。',
+    'form.decision_note': '最终合作决定将在我们评估所提交的条款后作出。'
   }
 };
 

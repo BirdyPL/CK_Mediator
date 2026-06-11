@@ -283,7 +283,18 @@ a:hover { text-decoration: underline; }
   padding: 16px 0;
 }
 .pkg-price strong { font-size: 28px; color: var(--color-text); font-weight: 800; letter-spacing: -0.02em; }
-.pkg-everything { font-size: 12px; font-weight: 700; color: var(--color-text); margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+.pkg-everything {
+  display: inline-block;
+  font-size: 13px; font-weight: 800;
+  color: var(--color-accent);
+  background: var(--color-accent-bg);
+  margin: 0 0 14px;
+  padding: 7px 14px;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-left: 3px solid var(--color-accent);
+}
 .pkg-list { margin: 0 0 16px; padding: 0 0 0 18px; }
 .pkg-list li { font-size: 14px; line-height: 1.55; margin: 6px 0; color: var(--color-text); }
 .pkg-list code {
@@ -344,9 +355,14 @@ a:hover { text-decoration: underline; }
 /* ========= CTA ========= */
 .cta-block { text-align: center; padding: 24px 0; }
 .cta-block .btn { margin: 6px; }
+.cta-primary-wrap {
+  text-align: center;
+  margin: 0 0 48px;
+}
 .cta-tertiary {
   font-size: 14px; color: var(--color-text-secondary);
-  margin: 24px 0 0;
+  text-align: center;
+  margin: 24px 0 32px;
 }
 
 /* ========= WIZARD NAV ========= */
@@ -430,6 +446,13 @@ a:hover { text-decoration: underline; }
 .field-consent em { color: var(--color-danger); font-style: normal; font-weight: 700; margin-right: 2px; }
 .field-consent-required { border-color: var(--color-border-strong); }
 .field-consent:hover { background: white; }
+.form-disclaimer {
+  font-size: 12px; color: var(--color-text-muted);
+  text-align: center;
+  margin: 18px 0 8px;
+  font-style: italic;
+  line-height: 1.5;
+}
 .form-actions { margin: 24px 0 0; }
 
 /* ========= CONFIRM ========= */
