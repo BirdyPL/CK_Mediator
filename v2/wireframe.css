@@ -116,6 +116,7 @@ a:hover { text-decoration: underline; }
   padding-top: 32px;
   margin: 0;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* ========= BUTTONS ========= */
